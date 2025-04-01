@@ -5,8 +5,8 @@ import Login from './Login.js';
 import SearchResult from './SearchResult.js';
 import Explore from './Explore.js';
 
-const CLIENT_ID = "308b4ad1ca514a2aac3b5e34bfb35fdd";
-const CLIENT_SECRET = "9f0a32081fb443209947e519e54a3c4d";
+const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
 
 const App = () => {
     const [showLoginPrompt, setShowLoginPrompt] = useState(true);
