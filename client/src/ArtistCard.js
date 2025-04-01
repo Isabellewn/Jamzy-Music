@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ArtistCardDetails from './ArtistCardDetails'
 
-const ArtistCard = ({artistId, artistName, artistImage, albumName, albumDate}) => {
+const ArtistCard = ({artistName, artistImage, albumName, albumDate}) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (

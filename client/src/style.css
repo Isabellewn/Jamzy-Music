@@ -249,84 +249,9 @@ body {
   }
 }
 
-/* Login */
-.login-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
 
-.login-modal {
-  background-color: #2a2a2a;
-  padding: 25px;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
 
-.login-modal h3 {
-  color: white;
-  margin-bottom: 15px;
-}
 
-.login-modal p {
-  color: #b0b0b0;
-  margin-bottom: 20px;
-}
 
-.login-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #444;
-  border-radius: 4px;
-  background-color: #1a1a1a;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.login-input:focus {
-  outline: none;
-  border-color: #ff6bff;
-}
-
-.login-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.login-submit-btn {
-  background-color: #ff6bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-.login-submit-btn:hover {
-  background-color: #ff8fab;
-}
-
-.login-cancel-btn {
-  background-color: transparent;
-  color: #b0b0b0;
-  border: 1px solid #444;
-  border-radius: 4px;
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-.login-cancel-btn:hover {
-  background-color: #3a3a3a;
-}
 
 

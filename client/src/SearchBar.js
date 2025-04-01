@@ -15,7 +15,7 @@ const SearchBar = ({ searchInput, handleInputChange, search })=> {
             search()
           }
         }}
-        placeholder="Search for a music like 'enchanted'"
+        placeholder="Search for a music track like 'enchanted'"
         className="search-input"
       />
     </div>

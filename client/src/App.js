@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SearchBar from './SearchBar.js';
 import Logo from './Logo.js';
-import Login from './Login.js';
 import SearchResult from './SearchResult.js';
 import Explore from './Explore.js';
 
@@ -9,7 +8,6 @@ const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
 const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
 
 const App = () => {
-    const [showLoginPrompt, setShowLoginPrompt] = useState(true);
     const [showExplore, setShowExplore] = useState(true);
     const [showExploreBtn, setShowExploreBtn] = useState(false);
     const [searchInput, setSearchInput] = useState('');
@@ -82,7 +80,6 @@ const App = () => {
     return (
         <div className='container'>
             <Logo />  
-            {/* {showLoginPrompt && <Login onLogin={() => setShowLoginPrompt(false)} />} */}
             <SearchBar searchInput={searchInput} handleInputChange={handleInputChange} search={search} />
             {showExploreBtn && <button onClick={resetToExplore} className='back-to-explore-btn'>Back to Explore</button>}
             

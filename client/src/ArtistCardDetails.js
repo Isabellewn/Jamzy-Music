@@ -5,7 +5,6 @@ const ArtistCardDetails = ({albumName, albumDate}) => {
     <div className='artist-card-details'>
       <p>{albumName}</p>
       <p>{albumDate}</p>
-
     </div>
   )
 }

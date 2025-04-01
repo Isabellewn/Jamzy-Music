@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import ArtistCard from './ArtistCard';
-import ArtistCardDetails from './ArtistCardDetails';
 
 const Explore = ({ accessToken }) => {
   const [albums, setAlbums] = useState([]);
@@ -36,7 +35,6 @@ const Explore = ({ accessToken }) => {
         {albums.map((album) => (
           <div key={album.artists[0].id}>
             <ArtistCard 
-              artistId={album.artists[0].id}
               artistName={album.artists[0].name}
               artistImage={album.images[0]?.url}
               albumName={album.name}
