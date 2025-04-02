@@ -135,7 +135,7 @@ GET /api/v1/comments/3sW3oSbzsfecv9XoUdGs7h
 #### Liking a Track
 **Request:**
 ```sh
-POST /api/v1/likes/12345
+POST /api/v1/likes/67ec7f6217d551a6bbe3a0a6
 ```
 **Response:**
 ```json
@@ -150,25 +150,10 @@ POST /api/v1/likes/12345
 }
 ```
 
-#### Fetching New Releases from Spotify API
-**Request:**
-```sh
-GET https://api.spotify.com/v1/browse/new-releases
-```
-**Response:**
-```json
-{
-  "albums": {
-    "items": [
-      {
-        "name": "New Album Name",
-        "artist": "Artist Name",
-        "release_date": "2025-03-30",
-        "cover_image": "https://linktoimage.com/album.jpg"
-      }
-    ]
-  }
-}
+#### Spotify API
+for other API please refer to the Spotify web API doc: 
+https://developer.spotify.com/documentation/web-api/reference/search
+
 ```
 
 ---
