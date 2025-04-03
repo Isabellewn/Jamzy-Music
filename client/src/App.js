@@ -49,7 +49,7 @@ const App = () => {
                 },
             };
 
-            let response = await fetch(`https://api.spotify.com/v1/search?q=${searchInput}&type=track&limit=6`, trackParams);
+            let response = await fetch(`https://api.spotify.com/v1/search?q=${searchInput}&type=track&limit=5`, trackParams);
             let result = await response.json();
 
             if (result.tracks?.items) {
@@ -76,7 +76,6 @@ const App = () => {
         setShowExploreBtn(false);
     };
 
-    //may remove login part since it's a bit complex
     return (
         <div className='container'>
             <Logo />  
